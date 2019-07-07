@@ -1,0 +1,29 @@
+Error unexpected indent
+是因为出现了意外的缩进，一般是因为代码行没有顶格写
+
+Python中不能使用matlab的clc代码
+
+不小心exclude了左边的文件夹
+回复步骤：
+Setting->Project Structure 将exclude取消
+
+无法import math
+解决：
+发现原来math实际上可以import，只是引用函数的时候一定要用math.function的指令
+不能单独用function（）来使用函数
+math和cmath都可以import
+但是这两者都不包含求平均数的功能
+
+无法import numpy
+解决：
+发现似乎并没有安装这个package
+Setting->Project Interpreter里面选择+
+可以看到有一个package列表
+从列表里面可以找到numpy包
+选中后左下角点击install
+等结束后就可以import啦啦啦啦
+求平均数的函数是mean（）不是avg
+
+eval() 函数用来执行一个字符串表达式，并返回表达式的值
+参考：http://www.runoob.com/python/python-func-eval.html
+
