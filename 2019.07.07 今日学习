@@ -29,5 +29,14 @@ eval() 函数用来执行一个字符串表达式，并返回表达式的值
 
 __name__这个内置变量中，下划线是两个！
 
+关于deque函数：
+deque（filename，n）
+这个函数是用来文件中返回最后n行的内容
+
+设定了deque（maxlen=n）之后，整个输出被限制在n行/个元素
+如果右边进，也就是在后边加上新的元素，最左边的元素便会被pop出去(用.pop功能实现)
+“使用 deque(maxlen=N) 构造函数会新建一个固定大小的队列。当新的元素加入并且这个队列已满的时候， 最老的元素会自动被移除掉。”
+https://docs.python.org/zh-cn/3/library/collections.html#collections.deque
+
 
 
