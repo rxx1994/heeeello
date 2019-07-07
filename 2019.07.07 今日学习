@@ -4,7 +4,7 @@ Error unexpected indent
 Python中不能使用matlab的clc代码
 
 不小心exclude了左边的文件夹
-回复步骤：
+恢复步骤：
 Setting->Project Structure 将exclude取消
 
 无法import math
@@ -26,4 +26,8 @@ Setting->Project Interpreter里面选择+
 
 eval() 函数用来执行一个字符串表达式，并返回表达式的值
 参考：http://www.runoob.com/python/python-func-eval.html
+
+__name__这个内置变量中，下划线是两个！
+
+
 
