@@ -38,5 +38,6 @@ deque（filename，n）
 “使用 deque(maxlen=N) 构造函数会新建一个固定大小的队列。当新的元素加入并且这个队列已满的时候， 最老的元素会自动被移除掉。”
 https://docs.python.org/zh-cn/3/library/collections.html#collections.deque
 
-
+关于yield
+https://www.jianshu.com/p/d09778f4e055
 
