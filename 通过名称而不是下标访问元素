@@ -1,0 +1,28 @@
+根据 Pyhton Cookbook 第1.18章
+如果想用名称来访问元素，类似关键字
+可以用collections.namedtuple()
+
+list/tuple_stock = namedtuple('list/tuple_name',['keyword1','keyword2',...])
+然后就可以一一对应地给keyword赋值
+list/tuple=list/tuple_stock('value1','value2'...)
+
+！不可先赋值后执行此操作，否则输出的tuple.keyword的值为地址
+因为在执行完namedtuple()之后
+大概是给每个keyword分配了一个地址
+然后通过下一步的赋值操作，将每个元组的元素一一分配给了这个地址
+然后就可以通过用list/tuple.keyword来访问这个元素了
+
+
+注意：元组的元素是不可更改的，如果要更改，需要用到：
+_replace()
+例：s = s._replace(keyword=value)
+即可改变这个keyword所对应的值
+
+本节给出的一个字典和stock转换的函数
+Stock = namedtuple(...)
+return stock_prototype== Stock(...)
+def dict_to_stock(s):
+    return stock_prototype._replace(**s)
+对字典dic_name执行程序之后，可以得到一个
+Stock(keyword=value,...)
+的元组
