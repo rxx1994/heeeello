@@ -25,3 +25,4 @@ lines = (line.strip() for line in f)
 可以用translate()
 参见cookbook的2.12
 
+去掉字符串内的杂七杂八的元素：https://github.com/apachecn/pyda-2e-zh/blob/master/3.md#%E5%87%BD%E6%95%B0%E4%B9%9F%E6%98%AF%E5%AF%B9%E8%B1%A1
