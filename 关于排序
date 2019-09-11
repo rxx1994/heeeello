@@ -1,0 +1,5 @@
+itertools模块中的groupby函数可以接受任何序列和一个函数，然后根据函数的返回值来进行分类。
+参考资料：官方文档
+https://docs.python.org/zh-cn/3/library/itertools.html
+
+用sort()排序不会生成新的序列。
