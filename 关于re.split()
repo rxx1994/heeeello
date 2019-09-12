@@ -28,3 +28,12 @@ re.split(r'此处为设定的要求','此处为需要分割的字符串')
 也就是说，尽管带了括号()
 但是里面的匹配项并不会被传入分割后的列表
 打上?:在最前面就可以了！
+
+
+如果不想切割成多个分组，只想从后面倒着分割n组，可以用str.rsplit()
+s.rsplit('分割条件',n)
+例子：
+path = /home/username/data/text.txt 
+path.rsplit("/",1)
+>>>["/home/username/data","text.txt "]
+参考资料： https://blog.csdn.net/qq1483661204/article/details/96119864
